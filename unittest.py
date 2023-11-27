@@ -3,8 +3,8 @@
 
 # run_tests.py
 import unittest
-from test_google_api import TestGoogleApi
-from test_playwright import TestPlaywright
+from tests.test_google_api import TestGoogleApi
+from tests.test_playwright import TestPlaywright
 
 if __name__ == '__main__':
     # Create a test suite that includes both test cases
@@ -13,6 +13,7 @@ if __name__ == '__main__':
 
     # Run the test suite
     unittest.TextTestRunner(verbosity=2).run(suite)
+
 
 # test_playwright.py
 from playwright.sync_api import sync_playwright, expect
