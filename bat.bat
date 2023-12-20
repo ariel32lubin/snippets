@@ -1,0 +1,1 @@
+start "load_canoe_data" powershell.exe -NoExit -Command "& 'C:\Users\ariel.lubin\NFP Corp\Fiducient IT Data Team - fiducient_all\handle_api_data\venv\Scripts\activate'; venv\Scripts\activate; python 'load_canoe_data.py';"
