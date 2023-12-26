@@ -1,3 +1,15 @@
+from playwright.async_api import async_playwright
+
+pw = await async_playwright().start()
+browser = await pw.chromium.launch(headless = False)
+page = await browser.new_page()
+
+await page.goto("https://scrapingbee.com/")
+
+
+
+
+
 import pandas as pd
 from typing import List, Union
 from playwright.sync_api import Playwright, Page
