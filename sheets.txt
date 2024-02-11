@@ -1,0 +1,1 @@
+=if(CalcClients,iferror(if(len(ClientsRecentAuthNumber)>0, index(QUERY(Auths!A:M,"select max(M) where (A="&B2&" and G starts with '90' and G contains 'C36')"),2,1),""),""),"")
