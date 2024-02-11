@@ -1,0 +1,1 @@
+get_data_from_another_table_with_same_header =IFNA(INDEX(ms_fee_analysis, MATCH(crm_investments_fee_analysis_formatted[@[ticker]:[ticker]], ms_fee_analysis[[ms.ticker]:[ms.ticker]], 0), MATCH(crm_investments_fee_analysis_formatted[[#Headers],[ms.name]], ms_fee_analysis[#Headers], 0)), "")
